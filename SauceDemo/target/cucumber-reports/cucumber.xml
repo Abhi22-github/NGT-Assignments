@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="147.295">
+<testcase classname="Login" name="Correct Login" time="14.412">
+<system-out><![CDATA[Given user is on Sauce Demo website login page..............................passed
+When user enters the correct username and password..........................passed
+And clicks on login button..................................................passed
+Then homepage should be displayed...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Incorrect Login" time="11.601">
+<system-out><![CDATA[Given user is on Sauce Demo website login page..............................passed
+When user enters the incorrect username and password........................passed
+And clicks on login button..................................................passed
+Then error meaages should be displayed......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Functionality" name="product list" time="11.445">
+<system-out><![CDATA[Given user navigate to the login page.......................................passed
+When user submit username and password......................................passed
+Then user should be logged in...............................................passed
+Given user is on homepage...................................................passed
+Then user should be able to see 6 product in the list.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Functionality" name="product details" time="14.08">
+<system-out><![CDATA[Given user navigate to the login page.......................................passed
+When user submit username and password......................................passed
+Then user should be logged in...............................................passed
+Given user is on homepage...................................................passed
+When user clicks on any product, details of that product should be displayed.passed
+]]></system-out>
+</testcase>
+<testcase classname="Functionality" name="filter product" time="13.734">
+<system-out><![CDATA[Given user navigate to the login page.......................................passed
+When user submit username and password......................................passed
+Then user should be logged in...............................................passed
+Given user is on homepage...................................................passed
+When user clicks on filter button...........................................passed
+Then 4 filters should be displayed..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Functionality" name="add product" time="13.806">
+<system-out><![CDATA[Given user navigate to the login page.......................................passed
+When user submit username and password......................................passed
+Then user should be logged in...............................................passed
+Given user is on homepage...................................................passed
+When user clicks on add to cart button on first product.....................passed
+Then product should be added in your cart...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Functionality" name="remove product" time="15.902">
+<system-out><![CDATA[Given user navigate to the login page.......................................passed
+When user submit username and password......................................passed
+Then user should be logged in...............................................passed
+Given user is on homepage...................................................passed
+When user clicks on add to cart button on first product.....................passed
+And user navigate to cart page and clicks on remove button of fisrt product.passed
+Then the product should get removed.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Functionality" name="add_multiple_product" time="13.87">
+<system-out><![CDATA[Given user navigate to the login page.......................................passed
+When user submit username and password......................................passed
+Then user should be logged in...............................................passed
+Given user is on homepage...................................................passed
+When user clicks on add to cart button on first and second product..........passed
+Then 2 products should be added in your cart................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Functionality" name="successful order" time="22.625">
+<system-out><![CDATA[Given user navigate to the login page.......................................passed
+When user submit username and password......................................passed
+Then user should be logged in...............................................passed
+Given user is on homepage...................................................passed
+When user clicks on add to cart button on first and second product..........passed
+Then 2 products should be added in your cart................................passed
+When user clicks on checkout and fills correct information on your information page.passed
+Then correct summary amount should be displayed in item total...............passed
+When user clicks on finish order should be placed with order placed message.passed
+]]></system-out>
+</testcase>
+<testcase classname="Functionality" name="log_out" time="15.44">
+<system-out><![CDATA[Given user navigate to the login page.......................................passed
+When user submit username and password......................................passed
+Then user should be logged in...............................................passed
+Given user is on homepage...................................................passed
+When user opens navigation menu.............................................passed
+And clicks on logout........................................................passed
+Then user should be logged out..............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
